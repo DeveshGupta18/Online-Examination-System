@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Creating Fixed Header and Footer with CSS</title>
+<style type="text/css">
+    /* Add some padding on document's body to prevent the content
+    to go underneath the header and footer */
+    body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+    .container{
+        width: 80%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+    .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }    
+    /* Some more styles to beutify this example */
+    nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+    .container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+</style>
+</head>
+<body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="StudentHome.jsp">Home</a>
+               <a href="register1.jsp">Available Exam</a>
+               <a href="exam.jsp">Examination</a>
+               <a href="examresult.html">Results</a>
+               
+                <a href="contactus.html">Contact Us</a>
+                <a href="logout.jsp">Logout</a>
+            </nav>
+        </div>
+    </div>
+    <div class="container">
+  
+    </div>    
+    <div class="fixed-footer">
+    <marquee>
+        <div class="container">Copyright &copy; Exam  Portal By ABD Softwere Solution </div>        
+    </marquee>
+    </div>
+</body>
+</html>      

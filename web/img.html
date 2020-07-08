@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: url('https://wallpapercave.com/wp/wp2939880.jpg');
+            background-size: cover;
+        	background-color: #00f0ff; 	
+            color: #fff;
+         }
+        .signin{
+           text-align: center;
+           /* font-size: 30px; */
+           background:rgba(44, 62, 80, 0.7);
+            margin-left: 180px;
+           font-weight: bold;
+           width: 250px;
+           padding: 40px;
+           margin: auto;
+           margin-top: 80px;
+           height: 400px;
+        }
+        form{
+            text-align: center;
+             width: 240px;
+        }
+        input[type=text]{
+            width: 240px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            font-family: 'play' sans-serif;
+            font-size: 16px;
+            font-weight: 200px;
+            padding: 10px 0;
+            transition:border 0.5s;
+            outline: none;
+            color:white;
+        }
+        input[type=password]{
+            width: 240px;
+            text-align: center;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            font-family: 'play' sans-serif;
+            font-size: 16px;
+            font-weight: 200px;
+            padding: 10px 0;
+            transition:border 0.5s;
+            outline: none;
+            color:white;
+        }
+        input[type=button]{
+            width: 190px;
+            border: none;
+            background: white;
+            color: #000;
+            font-size: 16px;
+            line-height: 25px;
+            padding: 10px 0;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        input[type=button]:hover{
+            color: #fff;
+            background-color: #000;
+            font-weight: bold;
+        }
+        h1{
+            color: #fff;
+        }
+        a{
+            font-size: 13px;
+            color:skyblue;
+        }
+       a:hover{ 
+           color: blueviolet;
+        }
+        .container{
+            display: flex;
+            flex-direction: row;
+            width: 100px;
+            /* font-size: 15px; */
+        }
+        ::placeholder{
+            color: aliceblue;
+            opacity: 0.8px;
+        }
+    </style>
+</head>
+<body id="c2" >
+        <script>
+            function fun2(){
+                document.getElementById("p1").innerHTML="";
+                        document.getElementById("p2").innerHTML="";
+                    
+            }
+               
+                function fun(){
+                    var user=document.getElementById("demo");
+                    var password=document.getElementById("demo1");
+                    if(user.value==""&&password.value==""){
+                        
+                        document.getElementById("p1").innerHTML="please enter your name";
+                        document.getElementById("p2").innerHTML="please enter password";
+                    }
+                    
+                 else if (user.value==""){
+                    document.getElementById("p1").innerHTML="please enter your name";
+                }
+                else if(password.value==""){
+                    document.getElementById("p2").innerHTML="please enter password";
+                }
+                }
+
+              
+            </script>
+            </head>
+            
+
+    <div class="signin">
+        <form >  
+                <h1>login</h1>
+                <p id="p1"></p>
+                <input type="text" name="username" id="demo" value="" onClick=fun2() placeholder="username"><br><br>
+                <p2 id="p2"></p2>
+                <input type="password" name="password" id="demo1" onclick="fun2()" placeholder="password"><br><br>
+                <p3 id="p3"></p3>
+                <input type="button" value="submit" onclick=fun()><br><br>
+                <div id="container">
+                    <a href="#">reset password</a><br>
+                    <a href="#">forgot password</a>
+               </div><br><br><br>
+
+        </form>
+    </div>
+    <!-- <script>
+        var user=document.getElementById("demo").value;
+        function fun(){
+            if(user==""){
+            document.getElementById("demo").innerHTML="please enter ur name";
+        }
+        }
+      
+    </script> -->
+</body>
+</html>
+
